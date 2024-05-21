@@ -33,5 +33,8 @@ public class commonmethods {
                 e.printStackTrace();
 
             }}
+
+    public void sample(){
+        System.out.println("Sample");
     }
 
