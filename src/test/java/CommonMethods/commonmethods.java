@@ -14,27 +14,27 @@ import static DriverFactory.DriverInitialization.driver;
 public class commonmethods {
 
 
-    public void TakeSCreenshot(){
+    public void TakeSCreenshot() {
 
-            // Take screenshot and save it as a file
-            File Scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        // Take screenshot and save it as a file
+        File Scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-            String filename = new SimpleDateFormat("yyyyMMddhhmmss'.png'").format(new Date());
+        String filename = new SimpleDateFormat("yyyyMMddhhmmss'.png'").format(new Date());
 
-            String  destinationPath = "C:\\Users\\DELL\\Sai\\FormsTesting\\target\\Screenshots\\";
+        String destinationPath = "C:\\Users\\DELL\\Sai\\FormsTesting\\target\\Screenshots\\";
 
 
-            try {
+        try {
 
-                  File Des = new File(destinationPath+filename);
-                FileUtils.copyFile(Scr, Des);
+            File Des = new File(destinationPath + filename);
+            FileUtils.copyFile(Scr, Des);
 
-            } catch (IOException e) {
-                e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
 
-            }}
+        }}
 
-    public void sample(){
-        System.out.println("Sample");
+        public void sample() {
+            System.out.println("Sample");
+        }
     }
-
